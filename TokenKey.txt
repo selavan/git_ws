@@ -1,0 +1,4 @@
+#token key
+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
+
+https://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@github.com/selavan/git_ws.git
