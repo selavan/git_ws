@@ -1,0 +1,22 @@
+
+1. Twist
+In the context of robotics and motion control, "twist" refers to the linear and angular velocity components of an object's motion. It represents the rate of change of position and orientation.
+
+In the provided code, the twist variable represents the linear and angular velocities of the robot. It is an instance of the geometry_msgs/Twist message type, which is commonly used in ROS (Robot Operating System) for representing velocity commands and motion information.
+
+The twist message contains two main fields:
+
+    Linear velocities (twist.linear): It includes three components: x, y, and z. These components represent the linear velocities of the robot along the X, Y, and Z axes, respectively. In the context of a differential drive robot, the x component is typically used for forward/backward motion.
+
+    Angular velocities (twist.angular): It also includes three components: x, y, and z. These components represent the angular velocities of the robot around the X, Y, and Z axes, respectively. The z component is commonly used for rotational motion or turning.
+
+By publishing a Twist message with appropriate values for the linear and angular velocities, you can control the motion of the robot. The twist message is then received and processed by the robot's control system to generate the corresponding motor commands and achieve the desired motion.
+
+
+2. wheel_base
+In the context of robotics and autonomous vehicles, the wheelbase refers to the distance between the centers of the front and rear wheels of a vehicle. It is the horizontal distance measured along the longitudinal axis of the vehicle.
+
+The wheelbase is an important parameter as it affects the stability, maneuverability, and overall dynamics of the vehicle. A longer wheelbase generally provides better stability at higher speeds and smoother rides, while a shorter wheelbase allows for tighter turns and better maneuverability in narrow spaces.
+
+The wheelbase is commonly used in vehicle dynamics calculations, such as determining the turning radius, calculating the center of gravity, and analyzing the vehicle's weight distribution. It is also relevant in path planning and control algorithms for autonomous vehicles, as it influences the vehicle's motion and behavior.
+
